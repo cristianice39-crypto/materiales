@@ -270,3 +270,34 @@ header {
         height: 200px;
     }
 }
+
+/* ===== IMAGEN SOFTWARE ===== */
+.imagen-software {
+    width: 80%;
+    margin: 80px auto 0;
+    display: flex;
+    justify-content: center;
+}
+
+.imagen-software img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    .imagen-software {
+        width: 90%;
+        margin: 50px auto 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .imagen-software {
+        width: 95%;
+        margin: 40px auto 0;
+    }
+}
