@@ -361,8 +361,6 @@ header {
     .galeria-fotos img {
         height: 200px;
     }
-}
-
 /* ===== BLOQUE COMPRA ===== */
 .bloque-compra {
     display: flex;
@@ -381,7 +379,29 @@ header {
     margin-top: 5px;
 }
 
-/* ===== BOTÓN COMPRA (estilo amarillo como el de archivo 3D) ===== */
+/* ===== FOTO DEBAJO DEL TÍTULO ===== */
+.imagen-compra {
+    width: 100%;
+    max-width: 450px;
+    margin: 20px auto 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.imagen-compra img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.imagen-compra img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* ===== BOTÓN COMPRA (amarillo) ===== */
 .btn-compra {
     display: inline-block;
     font-size: 1.2rem;
@@ -394,7 +414,7 @@ header {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
     cursor: pointer;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 .btn-compra:hover {
@@ -413,6 +433,9 @@ header {
     .precio-compra {
         font-size: 1rem;
     }
+    .imagen-compra {
+        max-width: 350px;
+    }
     .btn-compra {
         font-size: 1rem;
         padding: 14px 28px;
@@ -422,6 +445,9 @@ header {
 @media (max-width: 480px) {
     .precio-compra {
         font-size: 0.9rem;
+    }
+    .imagen-compra {
+        max-width: 280px;
     }
     .btn-compra {
         font-size: 0.9rem;
